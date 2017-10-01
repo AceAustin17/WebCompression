@@ -67,6 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="stylesheets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="stylesheets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="stylesheets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="stylesheets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="stylesheets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="stylesheets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="stylesheets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="stylesheets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,12 +83,49 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="compress.aspx" />
+    <Content Include="extract.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="index.aspx" />
+    <Content Include="scripts\js\bootstrap.min.js" />
+    <Content Include="scripts\js\jquery.easing.min.js" />
+    <Content Include="scripts\js\jquery.js" />
+    <Content Include="scripts\js\theme.js" />
+    <Content Include="scripts\js\validate.js" />
+    <Content Include="stylesheets\css\bootstrap.min.css" />
+    <Content Include="stylesheets\css\theme.css" />
+    <Content Include="stylesheets\font-awesome\css\font-awesome.css" />
+    <Content Include="stylesheets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="stylesheets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="stylesheets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="stylesheets\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="compress.aspx.cs">
+      <DependentUpon>compress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="compress.aspx.designer.cs">
+      <DependentUpon>compress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="extract.aspx.cs">
+      <DependentUpon>extract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="extract.aspx.designer.cs">
+      <DependentUpon>extract.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
