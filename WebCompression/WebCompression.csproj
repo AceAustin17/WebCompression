@@ -108,6 +108,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryData.cs" />
+    <Compile Include="CImage.cs" />
     <Compile Include="compress.aspx.cs">
       <DependentUpon>compress.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,6 +117,8 @@
     <Compile Include="compress.aspx.designer.cs">
       <DependentUpon>compress.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Compress.cs" />
+    <Compile Include="CompressText.cs" />
     <Compile Include="extract.aspx.cs">
       <DependentUpon>extract.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -122,9 +126,13 @@
     <Compile Include="extract.aspx.designer.cs">
       <DependentUpon>extract.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Extract.cs" />
+    <Compile Include="ExtractImage.cs" />
+    <Compile Include="ExtractText.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ImageCompress.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,7 +140,11 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Normalise.cs" />
+    <Compile Include="NormaliseImage.cs" />
+    <Compile Include="NormaliseText.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
