@@ -79,9 +79,9 @@
 <div class="container content-section text-center">
 	<div class="row">
         <form method="post" enctype="multipart/form-data" runat="server">
-		<h2>Upload your files here</h2>
+		<h2 id="head1" runat="server">Upload your files here</h2>
 		<div class="col-lg-8 col-lg-offset-2">
-			<p>
+			<p id ="head2" runat="server">
 			Important: File types must be of .txt or .jpg
 			</p>
 			<p >                   
@@ -91,10 +91,10 @@
                 <asp:LinkButton ID ="btnUpload"  runat="server" CssClass="btnghost" OnClick="upload">Upload</asp:LinkButton>		
                 
                 <img id="uploadimage" runat="server" src=" " />
-                <textarea id="text" runat="server"  cols="150"></textarea>
+                <textarea id="text" runat="server"  cols="50"></textarea>
                 <br />
-                <asp:LinkButton ID ="btnCompress" Visible="false" runat="server" CssClass="btnghost" OnClick="compressfile">Compress</asp:LinkButton>		
-                
+                <asp:LinkButton ID ="btnCompress" Visible="false" runat="server"  CssClass="btnghost" OnClick="compressfile">Compress</asp:LinkButton>		
+                <p id="ResultsText" runat="server"> </p>
                </p>
 		</div>
         </form>		

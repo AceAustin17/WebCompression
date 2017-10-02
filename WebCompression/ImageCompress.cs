@@ -24,7 +24,7 @@ namespace WebCompression
 
 
             XmlDocument xdoc = new XmlDocument();
-            xdoc.Load("ann.xml");
+            xdoc.Load(Server.MapPath("resources/ann.xml"));
 
             ds = new DataSet();
             ds.Load((XmlElement)xdoc.DocumentElement.ChildNodes[0]);
@@ -46,8 +46,7 @@ namespace WebCompression
             {
                 filedata[i] = i.ToString() + " " + err[i].ToString();
             }
-
-            File.WriteAllLines("../xornetwrk.txt", filedata);
+            
         }
         public override void compressFile(NormaliseImage norm)
         {

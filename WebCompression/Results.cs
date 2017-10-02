@@ -24,13 +24,13 @@ namespace WebCompression
         {
             double ratio = original / (double)compressed;
 
-            return "The compression ratio is " + Math.Round(ratio,1) + ":1";
+            return "Compression Ratio = " + Math.Round(ratio,1) + ":1";
         }
         public string ShowSavedData()
         {
             double saved = (1 - (compressed / (double)original))* 100;
 
-            return "The amount of data saved is " + Math.Round(saved) + "%";
+            return "Saved Space = " + Math.Round(saved) + "%";
         }
 
 

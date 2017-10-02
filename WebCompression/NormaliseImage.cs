@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace WebCompression
 {
-    class NormaliseImage : Normalise
+    class NormaliseImage : Normalise 
     {
         private double[,] numArray;
         private BinaryData binaryD = new BinaryData(8);
@@ -18,9 +18,9 @@ namespace WebCompression
         private List<KeyValuePair<double, double[]>> dataList = new List<KeyValuePair<double, double[]>>();
         Random random = new Random();
         private Bitmap image;
-
         public NormaliseImage(string path)
         {
+
             image = (Bitmap)Image.FromFile(path);
             numArray = new double[image.Width,image.Height];
             createArray();
@@ -114,7 +114,7 @@ namespace WebCompression
 
             doc.DocumentElement.AppendChild(DS.toXml(doc));
 
-            doc.Save("./ann.xml");
+            doc.Save(Server.MapPath("resources/ann.xml"));
         }
 
         private double GetNumber(double x)

@@ -76,16 +76,21 @@
 <!-- Project Details Section -->
 <section id="upload-extract">
 <div class="container content-section text-center">
-	<div class="row">
+	<div class="row">        
+        <form method="post" enctype="multipart/form-data" runat="server">
 		<h2>Upload your compressed files here</h2>
 		<div class="col-lg-8 col-lg-offset-2">
 			<p>
 			Important: File types must be of .cmx or .cmi
 			</p>
 			<p>
-				<a href="#" class="btnghost"><i class="fa fa-upload"></i> Upload</a>
+                <INPUT type=file id=File1 name=File1 runat="server"  />
+                <br>		
+                <asp:LinkButton ID ="btnExtract" runat="server"  CssClass="btnghost" OnClick="extractfile">Extract</asp:LinkButton>		
+              
 			</p>
 		</div>
+        </form>
 	</div>
 </div>
 </section>

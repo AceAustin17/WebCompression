@@ -13,6 +13,24 @@ namespace WebCompression {
     public partial class compress {
         
         /// <summary>
+        /// head1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl head1;
+        
+        /// <summary>
+        /// head2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl head2;
+        
+        /// <summary>
         /// File1 control.
         /// </summary>
         /// <remarks>
@@ -56,5 +74,14 @@ namespace WebCompression {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnCompress;
+        
+        /// <summary>
+        /// ResultsText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ResultsText;
     }
 }

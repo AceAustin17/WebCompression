@@ -37,6 +37,7 @@ namespace WebCompression
                 {
                     outputData[i] = 0.0;
                 }
+                else
                 {                     
                         outputData[i] = inputData[i + 1];
                 }
@@ -80,7 +81,7 @@ namespace WebCompression
 
             doc.DocumentElement.AppendChild(DS.toXml(doc));
 
-            doc.Save("./ann.xml");
+            doc.Save(Server.MapPath("resources/ann.xml"));
         }
         private void popArray(string[] worData)
         {

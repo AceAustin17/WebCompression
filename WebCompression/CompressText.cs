@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Xml;
 
 namespace WebCompression
@@ -27,7 +28,7 @@ namespace WebCompression
           
 
             XmlDocument xdoc = new XmlDocument();
-            xdoc.Load("ann.xml");
+            xdoc.Load(Path.Combine(HttpRuntime.AppDomainAppPath, "resources/ann.xml"));
 
             ds = new DataSet();
             ds.Load((XmlElement)xdoc.DocumentElement.ChildNodes[0]);
@@ -49,8 +50,7 @@ namespace WebCompression
             {
                 filedata[i] = i.ToString() + " " + err[i].ToString();
             }
-
-            File.WriteAllLines("../xornetwrk.txt", filedata);
+            
         }
         public override void compressFile(NormaliseText norm)
         {

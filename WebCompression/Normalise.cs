@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebCompression
+namespace WebCompression 
 {
-    abstract class Normalise
+    abstract class Normalise : System.Web.UI.Page
     {
         public virtual void saveToXML()
         {

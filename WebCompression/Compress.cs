@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebCompression
 {
-    abstract class Compress<T> where T:Normalise
+    abstract class Compress<T> : System.Web.UI.Page where T:Normalise 
     {
         public virtual void compressFile(T norm)
         {

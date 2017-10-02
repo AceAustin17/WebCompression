@@ -1,0 +1,620 @@
+<Root>
+  <DataSet>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,181</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,668</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,668</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,807</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,807</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,14</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,14</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,252</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,252</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,14</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,14</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,635</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,635</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,995</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,995</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,003</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,003</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,389</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,389</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,14</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,14</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,415</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,415</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,401</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,401</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,01</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,01</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,14</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,14</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,715</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,715</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,444</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,444</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,108</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,108</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,761</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,761</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,154</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,154</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,772</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,772</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,505</Data>
+      </Output>
+    </Datapoint>
+    <Datapoint>
+      <Input>
+        <Data Index="0">0,505</Data>
+      </Input>
+      <Output>
+        <Data Index="0">0,788</Data>
+      </Output>
+    </Datapoint>
+  </DataSet>
+</Root>
