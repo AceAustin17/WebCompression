@@ -7,7 +7,7 @@ using System.Drawing;
 using ANeuralNetwork;
 using System.Xml;
 
-namespace Compression_Year_Project
+namespace WebCompression
 {
     class NormaliseImage : Normalise
     {

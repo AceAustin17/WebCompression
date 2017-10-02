@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compression_Year_Project
+namespace WebCompression
 {
     abstract class Compress<T> where T:Normalise
     {

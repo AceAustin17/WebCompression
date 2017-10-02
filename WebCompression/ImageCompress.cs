@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Compression_Year_Project
+namespace WebCompression
 {
     class ImageCompress : Compress<NormaliseImage>
     {

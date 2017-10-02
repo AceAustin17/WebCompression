@@ -14,6 +14,7 @@
 <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS -->
 <link href="stylesheets/css/theme.css" rel="stylesheet">
+    
 <!-- Custom Fonts -->
 <link href="stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -24,6 +25,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+ 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
@@ -76,15 +78,26 @@
 <section id="upload-compress">
 <div class="container content-section text-center">
 	<div class="row">
+        <form method="post" enctype="multipart/form-data" runat="server">
 		<h2>Upload your files here</h2>
 		<div class="col-lg-8 col-lg-offset-2">
 			<p>
 			Important: File types must be of .txt or .jpg
 			</p>
-			<p>
-				<a href="#" class="btnghost"><i class="fa fa-upload"></i> Upload</a>
-			</p>
+			<p >                   
+               
+                <INPUT type=file id=File1 name=File1 runat="server"  />
+                <br>
+                <asp:LinkButton ID ="btnUpload"  runat="server" CssClass="btnghost" OnClick="upload">Upload</asp:LinkButton>		
+                
+                <img id="uploadimage" runat="server" src=" " />
+                <textarea id="text" runat="server"  cols="150"></textarea>
+                <br />
+                <asp:LinkButton ID ="btnCompress" Visible="false" runat="server" CssClass="btnghost" OnClick="compressfile">Compress</asp:LinkButton>		
+                
+               </p>
 		</div>
+        </form>		
 	</div>
 </div>
 </section>

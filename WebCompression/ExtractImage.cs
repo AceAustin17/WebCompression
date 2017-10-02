@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compression_Year_Project
+namespace WebCompression
 {
     class ExtractImage : Extract<Bitmap>
     {
