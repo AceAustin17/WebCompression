@@ -21,8 +21,8 @@ namespace WebCompression
                 case ".JPG":
                 case ".jpg":
                     FileName = "CompressedImage.cmi";
-
                     break;
+
                 case ".cmi":
                     FileName = "ExtractedImage.jpg";
                     break;

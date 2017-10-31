@@ -31,8 +31,9 @@ namespace WebCompression
         {
             if ((File1.PostedFile != null) && (File1.PostedFile.ContentLength > 0))
             {
-                string fn = System.IO.Path.GetFileName(File1.PostedFile.FileName);
-                string SaveLocation = Server.MapPath("uploadedFiles") + "\\" + fn;
+                string filename = System.IO.Path.GetFileName(File1.PostedFile.FileName);
+                Session["filename"] = filename;
+                string SaveLocation = Server.MapPath("uploadedFiles") + "\\" + filename;
                 try
                 {
                     File1.PostedFile.SaveAs(SaveLocation);
@@ -40,8 +41,9 @@ namespace WebCompression
                     File1.Visible = false;
                     btnUpload.Visible = false;
                     btnCompress.Visible = true;
-                    string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
-                    String filepath = filepaths[0].Replace(Request.ServerVariables["APPL_PHYSICAL_PATH"], String.Empty);
+
+                    String filepath = findFilePath((String)Session["filename"]);
+                    String actualFile = findFile((String)Session["filename"]);
                     
                     fileType = Path.GetExtension(filepath);
 
@@ -51,7 +53,7 @@ namespace WebCompression
                     {
                         case".txt":
                         text.Visible = true;
-                        using (StreamReader sr = new StreamReader(filepaths[0]))
+                        using (StreamReader sr = new StreamReader(actualFile))
                         {
                             while (sr.Peek() >= 0)
                             {
@@ -59,44 +61,54 @@ namespace WebCompression
                                 text.InnerText += line;
                             }
                         }
-                            norma = new NormaliseText(filepaths[0]);
+                            norma = new NormaliseText(actualFile);
                             norma.saveToXML();
 
                             Session["norm"] = norma;
+                            orignaLength = new System.IO.FileInfo(actualFile).Length;
+
+                            Session["originalLen"] = orignaLength;
                             break;
                         case ".jpg":
                         case ".JPG":
                             uploadimage.Visible = true;
                             uploadimage.Src =filepath;
-                            normaImage = new NormaliseImage(filepaths[0]);
+                            normaImage = new NormaliseImage(actualFile);
                             normaImage.saveToXML();
 
                             Session["norm"] = normaImage;
-                            break;
-                    }
-                    orignaLength = new System.IO.FileInfo(filepaths[0]).Length;
+                            orignaLength = new System.IO.FileInfo(actualFile).Length;
 
-                    Session["originalLen"] = orignaLength;
+                            Session["originalLen"] = orignaLength;
+                            break;
+                        default:
+                            File1.Visible = true;
+                            btnUpload.Visible = true;
+                            btnCompress.Visible = false;
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please Upload .txt or.jpg files only')", true);
+                            break;
+
+                    }                   
 
                 }
                 catch (Exception ex)
                 {
-                    Response.Write("Error: ");
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Unknown error')", true);
+
                 }
             }
             else
             {
-                Response.Write("Please select a file to upload.");
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please upload a file')", true);
+
             }
 
-           
+
         }
 
         public void compressfile(object sender, EventArgs e)
         {
-
-            string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
-            String filepath = filepaths[0].Replace(Request.ServerVariables["APPL_PHYSICAL_PATH"], String.Empty);
+            String filepath = findFilePath((String)Session["filename"]);
             fileType = Path.GetExtension(filepath);
             switch (fileType)
             {
@@ -139,6 +151,30 @@ namespace WebCompression
             }
         }
 
+        private string findFilePath(String filename)
+        {
+            string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
+            for(int i = 0; i < filepaths.Length;i++)
+            {
+                if(Path.GetFileName(filepaths[i]).Equals(filename))
+                {
+                    return filepaths[i].Replace(Request.ServerVariables["APPL_PHYSICAL_PATH"], String.Empty);
+                }
+            }
+            return null;
+        }
+        private string findFile(String filename)
+        {
+            string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
+            for (int i = 0; i < filepaths.Length; i++)
+            {
+                if (Path.GetFileName(filepaths[i]).Equals(filename))
+                {
+                    return filepaths[i];
+                }
+            }
+            return null;
+        }
         protected void OpenWindow()
         {
             head1.InnerText = "Results";
@@ -157,8 +193,7 @@ namespace WebCompression
 
             ResultsText.InnerHtml = "The results of compresssion is:" + "<br/>" + r.ShowRatio() +"<br/>" + r.ShowSavedData();
 
-        }
-       
+        }      
 
         //code adapted from https://stackoverflow.com/questions/23651650/is-there-a-way-to-compress-an-object-in-memory-and-use-it-transparently
         private static byte[] SerializeAndCompress(object obj)

@@ -22,15 +22,15 @@ namespace WebCompression
             if ((File1.PostedFile != null) && (File1.PostedFile.ContentLength > 0))
             {
                 string fn = System.IO.Path.GetFileName(File1.PostedFile.FileName);
+                Session["filename"] = fn;
                 string SaveLocation = Server.MapPath("uploadedFiles") + "\\" + fn;
                 try
                 {
                     File1.PostedFile.SaveAs(SaveLocation);
 
                     btnExtract.Visible = true;
-                    string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
-                    String filepath = filepaths[0].Replace(Request.ServerVariables["APPL_PHYSICAL_PATH"], String.Empty);
-
+                    String filepath = findFilePath((String)Session["filename"]);
+                    String actualFile = findFile((String)Session["filename"]);
                     string fileType = Path.GetExtension(filepath);
 
                     Session["filetype"] = fileType;
@@ -38,20 +38,13 @@ namespace WebCompression
                     switch (fileType)
                     {
                         case ".cmi":
-                            CImage cimage = DecompressAndDeserialize<CImage>(File.ReadAllBytes(filepaths[0]));
+                            CImage cimage = DecompressAndDeserialize<CImage>(File.ReadAllBytes(actualFile));
                             ExtractImage extI = new ExtractImage(cimage);
 
                             ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
-
-                            //Create an Encoder object based on the GUID
-                            // for the Quality parameter category.  
+                            
                             System.Drawing.Imaging.Encoder myEncoder =
                             System.Drawing.Imaging.Encoder.Quality;
-
-                            // Create an EncoderParameters object.  
-                            // An EncoderParameters object has an array of EncoderParameter  
-                            // objects. In this case, there is only one  
-                            // EncoderParameter object in the array.  
                             EncoderParameters myEncoderParameters = new EncoderParameters(1);
                             EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, 100L);
                             myEncoderParameters.Param[0] = myEncoderParameter;
@@ -62,7 +55,7 @@ namespace WebCompression
                             OpenWindow();
                             break;
                         case ".cmx":
-                            ExtractText ext = new ExtractText(File.ReadAllBytes(filepaths[0]));
+                            ExtractText ext = new ExtractText(File.ReadAllBytes(actualFile));
 
 
                             string filenam = Server.MapPath("resources/ExtractedText.txt");
@@ -71,19 +64,50 @@ namespace WebCompression
                             OpenWindow();
 
                             break;
+                        default:
+
+                            btnExtract.Visible = true;
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please Upload .cmx or.cmi files only')", true);
+
+                            break;
                     }
 
 
                 }
                 catch (Exception ex)
                 {
-                    Response.Write("Error: ");
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Unkown error occured')", true);
+
                 }
             }
             else
             {
-                Response.Write("Please select a file to upload.");
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please upload a file')", true);
+                            }
+        }
+        private string findFilePath(String filename)
+        {
+            string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
+            for (int i = 0; i < filepaths.Length; i++)
+            {
+                if (Path.GetFileName(filepaths[i]).Equals(filename))
+                {
+                    return filepaths[i].Replace(Request.ServerVariables["APPL_PHYSICAL_PATH"], String.Empty);
+                }
             }
+            return null;
+        }
+        private string findFile(String filename)
+        {
+            string[] filepaths = Directory.GetFiles(Server.MapPath("~/uploadedFiles"));
+            for (int i = 0; i < filepaths.Length; i++)
+            {
+                if (Path.GetFileName(filepaths[i]).Equals(filename))
+                {
+                    return filepaths[i];
+                }
+            }
+            return null;
         }
         protected void OpenWindow()
         {

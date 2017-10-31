@@ -113,5 +113,3 @@
 <script src="scripts/js/theme.js"></script>
 </body>
 </html>
-</html>
-</html>

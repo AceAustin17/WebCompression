@@ -38,18 +38,7 @@ namespace WebCompression
             {
                 PosList = value;
             }
-        }
-        //public List<KeyValuePair<Color, double>> _ColourList
-        //{
-        //    get
-        //    {
-        //        return this.ColourList;
-        //    }
-        //    set
-        //    {
-        //        this.ColourList = value;
-        //    }
-        //}
+        }     
       
 
         public int _width
